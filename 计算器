@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn" onclick="add()">加</button>
+    <button id="minus-btn"onclick="min()">减</button>
+    <button id="times-btn" onclick="time()">乘</button>
+    <button id="divide-btn"onclick="div()">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        var a = document.getElementById("first-number").value;
+        var b = document.getElementById("second-number").value;
+        function add(){
+            var a = document.getElementById("first-number").value;
+            var b = document.getElementById("second-number").value;
+            var jieguo = document.getElementById("result")
+            jieguo.innerHTML= parseInt(a) + parseInt(b);
+        }
+        function min(){
+            var a = document.getElementById("first-number").value;
+            var b = document.getElementById("second-number").value;
+            var jieguo = document.getElementById("result")
+            jieguo.innerHTML= parseInt(a)-parseInt(b);
+        }
+        function time(){
+            var a = document.getElementById("first-number").value;
+            var b = document.getElementById("second-number").value;
+            var jieguo = document.getElementById("result")
+            jieguo.innerHTML= parseInt(a) * parseInt(b);
+        }
+        function div(){
+            var a = document.getElementById("first-number").value;
+            var b = document.getElementById("second-number").value;
+            var jieguo = document.getElementById("result")
+            jieguo.innerHTML= parseInt(a) / parseInt(b);
+        }
+    </script>
+</body>
+</html>
