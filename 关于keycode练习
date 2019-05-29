@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+<meta charset="UTF-8">
+<body>
+    <input id="name" type="text" onkeydown="getkey()">
+    <button id="submit-btn">Submit</button>
+    <script>
+        var btn = document.getElementById('submit-btn').onclick = function(){
+            var Name = document.getElementById('name').value
+            console.log(Name);
+        }
+        function getkey(){
+            if(event.keyCode==13){
+                var Name = document.getElementById('name').value;
+                console.log(Name);
+            }
+            if(event.keyCode==27){
+                var Name = document.getElementById('name');
+                Name.value="";
+            }
+        }
+    </script>
+</body>
+</head>
+
+</html>
